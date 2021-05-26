@@ -4,6 +4,7 @@ using UnityEngine.Playables;
 using KartGame.KartSystems;
 using UnityEngine.SceneManagement;
 
+
 public enum GameState{Play, Won, Lost}
 
 public class GameFlowManager : MonoBehaviour
@@ -48,6 +49,8 @@ public class GameFlowManager : MonoBehaviour
     string m_SceneToLoad;
     float elapsedTimeBeforeEndScene = 0;
 
+    Timer m_Timer;
+
     void Start()
     {
         if (autoFindKarts)
@@ -82,6 +85,10 @@ public class GameFlowManager : MonoBehaviour
         StartCoroutine(ShowObjectivesRoutine());
 
         StartCoroutine(CountdownThenStartRaceRoutine());
+        
+        m_Timer = FindObjectOfType<Timer>();
+        DebugUtility.HandleErrorIfNullFindObject<Timer, GameFlowManager>(m_Timer, this);
+        
     }
 
     IEnumerator CountdownThenStartRaceRoutine() {
@@ -95,6 +102,9 @@ public class GameFlowManager : MonoBehaviour
 			k.SetCanMove(true);
         }
         m_TimeManager.StartRace();
+        Debug.Log("Debut");
+        m_Timer.StartGame();
+
     }
 
     void ShowRaceCountdownAnimation() {
