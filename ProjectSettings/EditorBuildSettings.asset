@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 6273f20fbac8c8647a4dc9243d2f3133
+  - enabled: 1
     path: Assets/Scenes/Map_IUT.unity
     guid: 332bf4dd21b927140adaf45b3994de94
   - enabled: 1
     path: Assets/Scenes/Map_Viking.unity
     guid: d2809ab9b90eea7419d8d90d4c505d35
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 6273f20fbac8c8647a4dc9243d2f3133
   m_configObjects: {}
