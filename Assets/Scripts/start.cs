@@ -11,6 +11,10 @@ public class start : MonoBehaviour
     [SerializeField] Text m_Chrono;
 
     
+    float time;
+    public float TimerInterval = 5f;
+    float tick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,18 +23,18 @@ public class start : MonoBehaviour
 
     }
 
-    float time = 5f;
     // Update is called once per frame
     void Update()
-    {
+    {        
+        m_Chrono.text = "" + Time.timeSinceLevelLoad.ToString();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             m_PressToStart.text = "";
-            StartCoroutine(Decompte());
-            time -= Time.deltaTime;
+            StartCoroutine(Decompte());            
         }
     }
-
+    //Compte a rebours 3...2...1...Go !
     IEnumerator Decompte(){
         for (int i=3; i >= 0; i--){
             yield return new WaitForSeconds(1);
@@ -41,10 +45,6 @@ public class start : MonoBehaviour
         m_Decompte.text = "Go !";
         yield return new WaitForSeconds(2);
         m_Decompte.text = "";
-    }
-    void OnGUI()
-    {
-        GUI.Label(new Rect(511,240,50,25), time.ToString());
     }
 
     void StopGame()
