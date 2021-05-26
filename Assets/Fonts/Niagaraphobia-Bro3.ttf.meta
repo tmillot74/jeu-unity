@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c6c8be3712450c74787ee1b024d7fbbf
+guid: 3154a7f5b1188c444a23750b1642cdc5
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,12 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Neo Fobia
   fontNames:
-  - Neo Fobia
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: c04cdfd47c61fc6478fc4197c567e8cc, type: 3}
-  - {fileID: 12800000, guid: e20a62067fba75e468eb13b57226b551, type: 3}
+  - Niagaraphobia
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
