@@ -1338,7 +1338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &539425133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1408,7 +1408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00079345703, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0.00079345703, y: 0}
   m_SizeDelta: {x: 320, y: 81.392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &554372954
@@ -1419,7 +1419,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554372952}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f14e4212022706f46b01f10d8f907cb3, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: e7ea75e0945cad44ab071ba31001ba2f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4168,7 +4168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b9ea33c7100d4a146a8f3e9a5df7de9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 285d524b9087feb4d945bf606df2b523, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4236,7 +4236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18431373, g: 0.25882354, b: 0.3372549, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4976,7 +4976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: INTO THE DEATH
+  m_Text: ICE-LAND
 --- !u!222 &1896843637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5000,7 +5000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1902036460
 RectTransform:
   m_ObjectHideFlags: 0
