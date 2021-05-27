@@ -54,9 +54,10 @@ public class Timer : MonoBehaviour
         string ok = File.ReadAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".txt");
         Debug.Log(timeSpan.ToString());
         string temps = timeSpan.ToString();
-        string ancienTemps = File.ReadAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".txt");
+        string ancienTemps = File.ReadAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + "Record.txt");
         if (DateTime.Parse(temps) < DateTime.Parse(ancienTemps))
-            File.WriteAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".txt", temps);
+            File.WriteAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + "Record.txt", temps);
+        File.WriteAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".txt", temps);
         Debug.Log(ok);
     }
 }
