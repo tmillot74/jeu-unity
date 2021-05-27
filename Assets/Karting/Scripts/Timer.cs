@@ -9,19 +9,18 @@ using System;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] Text m_PressToStart;
-    [SerializeField] Text m_Decompte;
     [SerializeField] Text m_Chrono;
 
     
     float nextFire = 0.0f;
     bool start = false;
-    double reste = 0;
+    DateTime time;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-
+        time = new DateTime();
     }
 
     // Update is called once per frame
@@ -30,8 +29,8 @@ public class Timer : MonoBehaviour
         if (start == true)
         {
             nextFire += Time.deltaTime;
-            reste = nextFire - Math.Truncate(nextFire);
-            m_Chrono.text = "" + Math.Truncate(nextFire) + " : " + Math.Round(reste,2)*100;
+            TimeSpan timeSpan = TimeSpan.FromSeconds(nextFire);
+            m_Chrono.text = timeSpan.Minutes.ToString("00") + ":" + timeSpan.Seconds.ToString("00") + ":" + timeSpan.Milliseconds.ToString("00");
         }
     }
 
