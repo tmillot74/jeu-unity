@@ -9,6 +9,6 @@ public class TestVolume : MonoBehaviour
 
     public void SetLevel(float sliderValue)
     {
-        mixer.SetFloat("MasterVolume", Mathf.Log10(sliderValue) * 20);
+        mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
     }
 }
