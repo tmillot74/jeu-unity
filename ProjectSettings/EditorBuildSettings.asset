@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map_Viking.unity
     guid: d2809ab9b90eea7419d8d90d4c505d35
+  - enabled: 1
+    path: Assets/Scenes/Map_Winter.unity
+    guid: a896278eab6e62e4aa8c5a0d3188d5f9
   m_configObjects: {}
