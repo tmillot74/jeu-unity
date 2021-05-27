@@ -21,10 +21,15 @@ public class Respawn : MonoBehaviour
             Debug.Log("respawn");
             LoadA(scene);
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("respawn");
+            LoadA("Menu");
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Sol")
+        if (collision.gameObject.tag == "Sol")
         {
             Debug.Log("respawn");
             LoadA(scene);

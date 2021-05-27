@@ -50,7 +50,6 @@ public class Timer : MonoBehaviour
 
     public void EndGame()
     {
-
         string ok = File.ReadAllText(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".txt");
         Debug.Log(timeSpan.ToString());
         string temps = timeSpan.ToString();

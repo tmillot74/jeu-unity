@@ -25,6 +25,7 @@ public class Finish : MonoBehaviour
         {
             Debug.Log("Fin");
             m_Timer.EndGame();
+            LoadA("Menu_Fin");
         }
     }
     public void LoadA(string scenename)
