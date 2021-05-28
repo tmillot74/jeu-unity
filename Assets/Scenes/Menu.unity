@@ -3824,7 +3824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Map IUT
+  m_text: ICE-LAND
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e9ac2734c7e03b646a30dd770e97beb1, type: 2}
   m_sharedMaterial: {fileID: -6051993942931566875, guid: e9ac2734c7e03b646a30dd770e97beb1,
